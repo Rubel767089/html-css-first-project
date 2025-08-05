@@ -432,7 +432,7 @@ box-sizing: border-box;
 /* -------------------------------section-7 parallex code start ----------------------- */
 
 #parallex_section{
-    background-image: url(img/parallax.jpg);
+    background-image: url(img/parallex.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
