@@ -1,0 +1,649 @@
+*{  
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+
+.navi{
+    background-image:linear-gradient(dodgerblue,rgb(5, 32, 59));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi > ul{
+    display: flex;
+    margin-right: 60px;
+    
+}
+
+.navi > ul > li{
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.navi > ul > li >a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-right: 1px solid wheat;
+    padding:10px 30px;
+    margin-left: -20px;
+    transition: 0.5s;
+}
+
+.navi > ul > li:first-child >a{
+    border-left: 1px solid wheat;
+    padding-left: 20px;
+}
+
+.navi > ul > li:hover > a{
+ 
+    background-color: rgb(66, 60, 241);
+}
+
+.logo img{
+    width: 150px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+
+/* -----dropdown menu start------- */
+.dropDownMenu{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+   margin-top: 20px;
+   position: absolute;
+   width: 218px;
+   box-shadow: 5px 5px 5px black;
+    margin-left: -20px;
+    transition: 0.5s;
+    transform: scaley(0);
+     transform-origin: top;
+}
+.dropDownMenu > li{
+    background-color: dodgerblue;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid wheat;
+    transition: 0.5s;
+}
+.dropDownMenu > li > a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.dropDownMenu > li:first-child{
+    border-top: 1px solid wheat;
+}
+.navi > ul > li:hover .dropDownMenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+.dropDownMenu > li:hover{ 
+    background-color: rgb(66, 60, 241);
+}
+
+/* ---------------Main-header area code-------------- */
+.MainHeader{
+    text-align: center;
+   background-image:linear-gradient(rgba(103, 205, 236, 0.305),black), url("img/web header.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+    height: 90vh;
+}
+
+
+
+
+
+.headerContainer{
+    padding-top: 50px;
+}
+
+.headerContainer h1{
+    width: 500px;
+    background-color: rgba(3, 51, 100,0.67);
+    margin: 20px auto;
+    font-size: 50px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.headerContainer button{
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: rgb(2, 42, 85);
+    color: white;
+    border-radius: 50px 10px 50px 10px;
+    border: 3px solid rgb(14, 229, 71);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.headerContainer button:hover{
+    background-color: rgba(0, 255, 255, 0.3);
+}
+.headerContainer > h3{
+    font-size: 25px;
+    color: rgb(61, 5, 5);
+}
+
+.headerContainer > h4{
+    font-size: 20pxpx;
+    color: rgb(61, 5, 5);
+}
+.icons{
+    margin: 10px;
+}
+
+
+
+.icons a{
+    font-size: 30px;
+    text-decoration: None;
+    color: white;
+   
+}
+
+.icons a i{
+    background-color: green;
+    padding: 5px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 1.3 ;
+    transition: 0.5s;
+}
+.icons a i:hover{
+    background-color: rgb(2, 42, 85);
+    transform: rotate(360deg);
+    border: 2px solid yellow;
+    
+}
+
+/*--------------------- Start Main section -----------------------*/
+
+#mainsection-1{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+
+
+
+ .learn-programming{
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+ }
+ .learn-programming i{
+    font-size: 50px;
+ }
+ .learn-programming h2{
+    padding: 15px 0;
+ }
+ .learn-programming:hover{
+    box-shadow: 3px 3px 5px gray;
+ }
+/* ---------------2nd section code start hear ------------- */
+.smartarea h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.smartarea > h2::after{
+    content: "";
+    top: 50px;
+    left: 700px;
+    width: 125px;
+    height: 5px;
+    background-color: #630909;
+    position: absolute;
+}
+
+
+.parasection{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.smart-text-area{
+    width: 500px;
+}
+
+.Rightside h2{
+    margin: 20px;
+}
+.Rightside h4{
+    color: #630909;
+}
+.Rightside a{
+    text-decoration: None;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color:#630909;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Rightside a:hover{
+    background-color: #990606;
+}
+/* ----------------3rd section code start ------------------ */
+
+
+.sercive-area-title{
+    text-align: center;
+}
+.sercive-area-title h2{
+    font-size: 40px;
+}
+
+
+
+.sixbox{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+   grid-gap:20px;
+   padding: 40px 0 60px 0;
+   
+}
+
+.servises-Area{
+    width: 1000px;
+    margin: auto;
+}
+.servises{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.servises i{
+    font-size: 40px;
+    color: #a71e1e;
+}
+
+.servises h3{
+    margin: 15px 0;
+}
+
+.servises:hover{
+    background-color: rgb(218, 235, 241);
+}
+
+
+#thirdsection{
+    background-color:rgb(249, 244, 239);
+    padding: 50px 0;
+    margin-top: 30px;
+}
+
+/* -------------------------fourth section codes --------------- */
+
+#fourthsection{
+    background-color: rgb(213, 208, 208);
+}
+
+.maincontainer{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.pricing-area{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    width: 310px;
+   
+}
+.img img{
+    max-width: 100%;
+}
+.singlecard{
+    width: 310px;
+    text-align: center;
+    box-shadow: 3px 3px 10px black;
+}
+
+.singlecard h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.monthpricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    margin: 10px 20px;
+    padding: 15px 0;
+}
+.monthpricing .spn1{
+    font-size: 25px;
+}
+.monthpricing .spn2{
+    color: gray;
+}
+.singlecard button{
+    background-color: #630909;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.singlecard button:hover{
+    background-color: #63090900;
+    color: black;
+}
+.singlecard a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0 15px 0;
+    color: #630909;
+}
+
+/* -----------------------------section five code start ------------------------ */
+
+#five{
+    background-color: bisque;
+}
+.tes_container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.tsmltitle{
+    text-align: center;
+    padding: 40px 0;
+}
+.tsmltitle h2{
+    font-size: 35px;
+}
+.tsmltitle h4{
+    color: gray;
+    letter-spacing: 0.4em;
+}
+
+.parsinglearea{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   grid-gap:20px;
+    
+}
+.singlearea{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.imgs_div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.imgs_div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.spn1{
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.reatings{
+    color: #FFA534;
+    padding-top: 10px;
+}
+
+/* -------------------------------section-7 parallex code start ----------------------- */
+
+#parallex_section{
+    background-image: url(img/parallax.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    padding: 60px 0;
+}
+.parallex-container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.parallex{
+    padding: 50px;
+    color: white;
+}
+.parallex i{
+    font-size: 40px;
+}
+.parallex h2{
+font-size: 40px;
+padding: 10px 0;
+}
+
+
+/* ---------------------------From blog code start now ---------------------  */
+
+.blog-container{
+    width: 1000px;
+    margin: auto; 
+    padding-bottom: 50px;
+}
+.blog-container-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+}
+
+.imgs{
+    max-width: 100%;
+    height:250px;
+    transition: 0.5s;
+}
+.blog-icon{
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.blog-img-icon-div{
+    position: relative;
+    overflow: hidden;
+}
+.blog-img-icon-div:hover .blog-icon{
+    opacity: 1;
+    background-color: rgba(30, 29, 29, 0.603);
+}
+.blog-img-icon-div:hover .imgs{
+    transform: scale(1.6);
+
+}
+.blog-icon i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.blog-text{
+    text-align: center;
+    margin: 10px 0;
+}
+.blog-text p{
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.342);
+}
+
+/*---------------------------- contact section code start here ----------------- */
+
+.contact-container{
+    width: 1000px;
+    margin: auto;
+}
+.form-container{
+    display: flex;
+    background-color: #DADBDF;
+}
+.form-container form{
+    width: 600px;
+}
+.name-email-paretn{
+    display: flex;
+}
+.name-email-paretn input{
+    border: none;
+    margin: 0 20px;
+    padding-left: 10px;
+    height: 40px;
+}
+ .form_text{
+    margin: 40px 0 10px 20px;
+}
+.subject-input{
+    width: 85%;
+    border: none;
+    margin: 0 20px;
+    padding-left: 10px;
+    height: 40px;
+}
+.msgarea-input{
+    width: 85%;
+    border: none;
+    margin: 0 20px;
+    padding: 5px 0 0 10px;
+    height: 100px;
+}
+.submit-input{
+    margin: 20px 20px;
+    border: none;
+    background-color: #226DC4;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------contact-area code start now ------------------------- */
+.contact-area-parent{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-area-parent{
+    text-align: center;
+}
+.contact-area-parent i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #226DC4;
+    padding: 10px;
+    border-radius: 50%;
+}
+.contact-area-parent span{
+    font-weight: bold;
+}
+
+/* ----------------------footer area code start here ---------------------------------- */
+footer{
+    background-color: #0a3a70;
+    color: gray;
+}
+.footer-container{
+    width: 1000px;
+    margin: auto;
+}
+.footer-single-parent{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.footer-single-child{
+    width: 230px;
+}
+.footer-single-child h3{
+    color: white;
+    margin: 50px 0 20px 0;
+}
+.footer-single-child i{
+    color: white;
+    padding-right: 5px;
+}
+.footer-prothom-div-ptext{
+    margin: 20px 0;
+}
+.footer-prothom-div-icontext{
+    margin-bottom: 10px;
+}
+.footer-single-parent .footer-single-child:nth-child(2) p{
+    margin:10px;
+}
+.footer-single-parent .footer-single-child:nth-child(3) p{
+    margin:10px;
+}
+.footer-single-parent .footer-single-child:nth-child(4) p{
+    margin:10px;
+}
+.footer-single-parent .footer-single-child:nth-child(4) a{
+    text-decoration: none;
+    color: hwb(0 5% 4%);
+}
+.footer-list-item ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-list-item ul li{
+    list-style: none;
+    margin: 20px;
+}
+.footer-list-item ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-list-item p{
+    text-align: center;
+    padding-bottom: 20px;
+}
